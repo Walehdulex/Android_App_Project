@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <!-- Input field for product name -->
+    <EditText
+        android:id="@+id/edit_text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"/>
+
+    <!-- Input field for product quantity -->
+    <EditText
+        android:id="@+id/edit_text_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_product_name"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:hint="Quantity"/>
+
+    <!-- Button to decrement product quantity -->
+    <Button
+        android:id="@+id/button_decrement_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_product_quantity"
+        android:layout_marginTop="16dp"
+        android:text="-"/>
+
+    <!-- Button to increment product quantity -->
+    <Button
+        android:id="@+id/button_increment_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_product_quantity"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/button_increment_quantity"
+        android:text="+"/>
+
+    <!-- Input field for product unit -->
+    <Spinner
+        android:id="@+id/edit_text_product_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_decrement_quantity"
+        android:layout_marginTop="16dp"
+        android:hint="Unit"/>
+
+    <!-- Button to save changes -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_product_unit"
+        android:layout_marginTop="24dp"
+        android:text="Save"/>
+
+</RelativeLayout>
